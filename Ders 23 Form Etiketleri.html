@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Etiketleri</title>
+</head>
+<body>
+		<form nesnemiz alttaki satır ile oluşturularak form blogunun içine farklı kompanentler ekleyebiliyoruz>
+		<form name="kayit" id="uye-kayit" method="post"> 
+		<labell oluşturulması alttaki satırda olduğu gibidir. for="adi" tanımlaması mouse a tıklanıldığında hangi komponentin idd="adi" ise o komponent çalışır>
+		<label for="adi">Adin</label> 
+		<metin girebileceğimiz alan bu komponenttir.>
+		<input type="text" name="adınız" value="" placeholder="Adını Yaz" id="adi" maxlength="7" size="54" enabled="enabled"/>
+		<ip numarası gibi kayıtları kullanıcıya sormadan kayıt edebildiği komponenttir.>
+		<input type="hidden" value=""/>
+		<fieldset>
+		
+			<legend>Seyahat Geçmişiniz</legend>
+			
+				<h3>Türkiyede Hangi Bölgeleri Seyahat Ettiniz?<h3>
+				<label for="Marmara"/>Marmara</label>
+				<input type="checkbox" name="Marmara" id="Marmara" value="Marmara" />
+				
+				<label for="Ege"/>Ege</label>
+				<input type="checkbox" name="Ege" id="Ege" value="Ege" />
+				
+				<label for="İç Anadolu"/>İç Anadolu</label>
+				<input type="checkbox" name="İç Anadolu" id="İç Anadolu" value="İç Anadolu" /> <br/> <br/>
+				
+				<label for="Akdeniz"/>Akdeniz</label>
+				<input type="checkbox" name="Akdeniz" id="Akdeniz" value="Akdeniz" />
+				
+				<label for="Karadeniz"/>Karadeniz</label>
+				<input type="checkbox" name="Karadeniz" id="Karadeniz" value="Karadeniz" />
+				
+				<label for="Doğu Anadolu"/>Doğu Anadolu</label>
+				<input type="checkbox" name="Doğu Anadolu" id="Doğu Anadolu" value="Doğu Anadolu" />
+				
+				<label for="Güney Doğu Anadolu"/>Güney Doğu Anadolu</label>
+				<input type="checkbox" name="Güney Doğu Anadolu" id="Güney Doğu Anadolu" value="Güney Doğu Anadolu" /> <br/>
+				
+				<h3>Sence En Güzel Bölge Hangisiydi?<h3>
+				
+				<label for="Marmara"/>Marmara</label>
+				<input type="radio" name="bolgeler" id="Marmara" value="Marmara" />
+				
+				<label for="Ege"/>Ege</label>
+				<input type="radio" name="bolgeler" id="Ege" value="Ege" />
+				
+				<label for="İç Anadolu"/>İç Anadolu</label>
+				<input type="radio" name="bolgeler" id="İç bolgeler" value="İç Anadolu" /> <br/> <br/>
+				
+				<label for="Akdeniz"/>Akdeniz</label>
+				<input type="radio" name="bolgeler" id="Akdeniz" value="Akdeniz" />
+				
+				<label for="Karadeniz"/>Karadeniz</label>
+				<input type="radio" name="bolgeler" id="Karadeniz" value="Karadeniz" />
+				
+				<label for="Doğu Anadolu"/>Doğu Anadolu</label>
+				<input type="radio" name="bolgeler" id="Doğu Anadolu" value="Doğu Anadolu" />
+				
+				<label for="Güney Doğu Anadolu"/>Güney Doğu Anadolu</label>
+				<input type="radio" name="bolgeler" id="Güney Doğu Anadolu" value="Güney Doğu Anadolu" /> <br/>
+
+				<h4>Seçtiğiniz En Güzel Bölge Hakkında Düşüncelerinizi Yazınız.</h4><br/>
+				<label for="mesaj" >Düşünceleriniz</label><br/>
+				<textarea name="mesaj" id="mesaj" rows="10">
+				
+				</textarea>
+				<h4>O bölgede çektiğiniz fotoğrafları yükleyiniz.<h4><br/>
+				<label for="yukle">Resim Yükle: </label>
+				<input type="file" id="yukle" name="dosya" value=""/><br/><br/>
+				<input type="submit" value="Gönder"/>
+				<input type="reset" value="İptal"/>
+				
+				<h2>Bu bölgelere hangi ulaşım aracını kullanarak seyahat ettiniz?</h2>
+				
+				<select name="select">
+					<option name="" value="" disabled="disabled" selected="selected"/>Bir Seçim Yap!</option>
+						<optgroup label="Karayolu">
+							<option value="otobus">Otobüs</option>
+							<option value="araba">Kişisel Araba</option>
+						</optgroup>
+						
+						<optgroup label="Deniz Yolu">
+							<option value="gemi">Gemi</option>
+							<option value="vapur">Vapur</option>
+						</optgroup>
+						<option value="tren">Tren</option>
+						<option value="uçak">Uçak</option>
+				</select>
+		</fieldset>
+		
+		</form><br/> <br/>
+
+		<form name="html5-etiketleri" method="get">
+			<fieldset> 
+				<legend>Html 5 Etiketleri</legend>
+				
+					<label for="date">Tarih Bilgisi Girin:</label>
+					<input type="date" id="date" name="date" pattern="\d(4)-d(2)-d(2)" title="Gün-Ay-Yıl"/> <br/>
+					
+					<label>Renk Seç:</label>
+					<input type="color" name="color" value="#dddd"/> <br/>
+					
+					<label>Mail Adresini Gir:</label>
+					<input type="email" name="email" multiple /> <br/>
+					
+					<label>Arama Yap:</label>
+					<input type="search" name="search" /> <br/>
+					
+					<label>Web Adresi Gir:</label>
+					<input type="url" name="url" /> <br/>
+					
+					<fieldset>
+						<legend>Sayı Seç:</legend>
+							<label>Adımsal Sayı Aralığı</label> <br/>
+								<input type="number" name="number" min="0" max="54" value="16" /> <br/>
+							<label>Sürgülü Sayı Aralığı</label> <br/>
+								<input type="range" name="range" min="-273" max="100" step="3" value="27" /> <br/>
+					</fieldset> <br/><br/>
+					
+					<input type="submit" name="gonder" value="Tamam" />
+					<input type="reset" name="reset" value="İptal" />
+			
+			</fieldset>	
+		</form> <br/><br/>
+		<form name="Html Etiketleri 2" method="get">
+		
+			<label for="adi2">Adin</label>
+			<input type="text" name="adınız" value="" placeholder="Adını Yaz" id="adi2" maxlength="7" size="54" enabled="enabled" tabindex="1" autofocus /><br/>
+			
+			<label for="adi2">Adin</label> 
+			<input type="text" tabindex="3" list="veriler" /><br/>
+				<datalist id="veriler">
+					<option value="iphone">İphone</option>
+					<option value="Samsung">Samsung</option>
+					<option value="Nokia">Nokia</option>
+				</datalist>
+			<label for="adi2">Okulun</label> 
+			<input type="text" tabindex="4" required /><br/>
+			
+			<label for="adi2">Adres</label> 
+			<input type="text" tabindex="2"  /><br/>
+			
+			<label for="adi2">Memleket</label> 
+			<input type="text" tabindex="5"  /><br/>
+			
+			<label for="adi2">Saç Rengin</label> 
+			<input type="text" readonly /><br/><br/>
+			
+			<input type="submit" name="gonder" value="Tamam" />
+			<input type="reset" name="reset" value="İptal" />
+		</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+</body>
+</html>
